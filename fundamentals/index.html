@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Fundamentals of data reporting</title>
+
+</head>
+<body>
+<h1>Fundamentals of data reporting</h1>
+
+<p>Columbia University, March 2015</p>
+
+<p>Schedule:</p>
+
+<p>|---|---|
+| 10:00 | Introductions and expectations for the day |
+| 10:45 | Data journalism in the wild|
+| 11:15 | Excel review: best practices and tidy data|
+| 11:45 | First exercise: an internal affairs report |
+| 12:30 | Lunch and review of morning. Optional discussion of acquiring data using open records laws.|
+| 1:30  | More in Excel: Pivot tables, filtering and how to extend to other programs|
+| 2:30  | Tableau Public: Sneaking into SQL with visualization |
+| 3:30  | Getting data: The basics of web scraping and APIs |</p>
+
+<h2>Stories in the wild</h2>
+
+<ul>
+<li>Elliot Jaspin's story of finding <a href="http://hnn.us/article/35847">racial cleansing</a> in Census data.</li>
+<li><a href="http://www.washingtonpost.com/wp-dyn/content/article/2008/08/10/AR2008081002512.html">Money as a Weapon</a>
+(started with database), The Washington Post, Dana Hedgpeth and Sarah Cohen</li>
+<li>Jo Becker's <a href="http://www.nytimes.com/2010/03/07/world/middleeast/07sanctions.html?pagewanted=all">Iran story</a> (good example of "what's supposed to happen?"),
+The New York Times, Jo Becker and Ron Nixon</li>
+<li><a href="http://online.wsj.com/news/articles/SB10001424052748704696304575538112856615900">Medicare</a>, The Wall Street Journal, (very, very large fish)</li>
+<li><a href="https://docs.google.com/presentation/d/1bwYTBxnSSCBlhEh5_xnoiTejqoNbR5j_NZtVe1iDfTc/edit#slide=id.g2baf1d8ae_030">60 data-driven ideas in 60 minutes</a>
+from Mary Jo Webster and Jodi Upton, NICAR 14.</li>
+<li><a href="http://www.pbs.org/wgbh/pages/frontline/death-in-st-augustine/">A Death in St. Augustine</a>, Frontline, as an example of weaving in data when you are working on a narrative.
+We'll look at a piece of this story later on.</li>
+<li>[The presentation from our class]</li>
+<li><a href="http://sarahcnyt.github.io/stabile/docs/berens_nerds_words.pdf">Mike Berens' piece</a> on the heart of data journalism, written when Bill Clinton was president.</li>
+</ul>
+
+
+<h2>Excel: Review and best practices</h2>
+
+<h3>Handouts and reference</h3>
+
+<ul>
+<li><a href="https://github.com/sarahcnyt/classes/blob/gh-pages/docs/macxlcheatsheet.pdf?raw=true">Cheat sheet</a> on keyboard shortcuts for Mac and Windows Excel.</li>
+<li><a href="http://www.youtube.com/playlist?list=PL-Je9dqyEF8YS7Cy8BppKg5zrhiQC__n6">Video series</a> on best practices (for refresher later on)</li>
+<li>Tidy data</li>
+</ul>
+
+
+<h3>In class:</h3>
+
+<ul>
+<li>We'll look through this reconstruction of the career of Dr. Jack Kevorkian to see how to build a chronology for what we need.</li>
+<li>Create the outline of a spreadsheet on Bubba Harris based on this internal affairs report. You'll decide which columns you need and how you'll want to use it in a story. Try filling in about 5-10 rows.</li>
+<li>After class, you can see <a href="https://github.com/sarahcnyt/classes/blob/gh-pages/exampledata/bubba_harris_protocol.xlsx?raw=true">the spreadsheet</a> I created from it, and the <a href="http://www.nytimes.com/projects/2013/two-gunshots/">paragraphs in a story</a> that were based on it (toward the end). If you're interested in other data work for that story, hthe companion piece is []"Departments Slow To Police Their Own Abusers"](http://www.nytimes.com/projects/2013/police-domestic-abuse/)</li>
+</ul>
+
+
+<h2>Excel Part 2: Filtering and pivot tables</h2>
+
+<h3>Handouts and reference</h3>
+
+<ul>
+<li>Videos on <a href="https://www.youtube.com/watch?v=TleYPfeJnnU">filtering</a> and <a href="http://youtu.be/_rZ6y-e7diw">pivot tables</a></li>
+<li><a href="https://github.com/sarahcnyt/classes/blob/gh-pages/docs/xlpivot_updated.pdf?raw=true">Handout</a>, courtesy of IRE.</li>
+</ul>
+
+
+<h3>In class</h3>
+
+<ul>
+<li>Working with Major League Baseball <a href="../exampledata/MLB2011.xlsx">salaries</a></li>
+</ul>
+
+
+<h2>If there is time: Open refine to clean data</h2>
+
+<p>A start-to-finish example of using OpenRefine to create a tidy dataset, which we'll use in the next step, using long-term managed care populations from the NYS Department of Health. Original spreadsheets downloaded from this <a href="https://www.health.ny.gov/health_care/managed_care/reports/enrollment/monthly/">state site</a> and combined to create a <a href="../exampledata/all-longterm-managed-care.xlsx">single spreadsheet</a> with all reports on one page.  We'll start from here, with <a href="https://github.com/sarahcnyt/classes/blob/gh-pages/docs/cleanup_medicare.md">this guide</a> for OpenRefine.</p>
+
+<h2>Database concepts and viz: Tableau Public</h2>
+
+<ul>
+<li><a href="http://www.tableau.com/public/ire">Training materials</a> for IRE conferences. (Note: If you <a href="http://ire.org/membership/">join IRE</a> for $70, you can request a copy of desktop Tableau for free - normally about $2,000 / year.)</li>
+<li>Example dat</li>
+</ul>
+
+
+<h3>Going further</h3>
+
+<ul>
+<li><a href="http://sarahcnyt.github.io/stabile/weeks/class03.html">Public records resources</a> from previous class</li>
+</ul>
+
+</body>
+</html>
