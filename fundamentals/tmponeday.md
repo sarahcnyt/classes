@@ -31,20 +31,27 @@ We'll look at a piece of this story later on.
 ## Excel: Review and best practices
 
 ### Handouts and reference
-* [Cheat sheet](https://github.com/sarahcnyt/stabile/blob/master/xl/macxlcheatsheet.pdf) on keyboard shortcuts for Mac and Windows Excel.
+* [Cheat sheet](https://github.com/sarahcnyt/stabile/blob/master/xl/macxlcheatsheet.pdf?raw=true) on keyboard shortcuts for Mac and Windows Excel.
 * [Video series](http://www.youtube.com/playlist?list=PL-Je9dqyEF8YS7Cy8BppKg5zrhiQC__n6) on best practices (for refresher later on)
 * Tidy data
 
 ### In class:
 * We'll look through this reconstruction of the career of Dr. Jack Kevorkian to see how to build a chronology for what we need.
 * Create the outline of a spreadsheet on Bubba Harris based on this internal affairs report. You'll decide which columns you need and how you'll want to use it in a story. Try filling in about 5-10 rows.
-* After class, you can see [the spreadsheet](../exampledata/bubba_harris_protocol.xlsx) I created from it, and the [paragraphs in a story](http://www.nytimes.com/projects/2013/two-gunshots/) that were based on it (toward the end). If you're interested in other data work for that story, hthe companion piece is []"Departments Slow To Police Their Own Abusers"](http://www.nytimes.com/projects/2013/police-domestic-abuse/)
+* After class, you can see [the spreadsheet](../exampledata/bubba_harris_protocol.xlsx?raw=true) I created from it, and the [paragraphs in a story](http://www.nytimes.com/projects/2013/two-gunshots/) that were based on it (toward the end). If you're interested in other data work for that story, hthe companion piece is []"Departments Slow To Police Their Own Abusers"](http://www.nytimes.com/projects/2013/police-domestic-abuse/)
 
 ## Excel Part 2: Filtering and pivot tables
 
 ### Handouts and reference
 * Videos on [filtering](https://www.youtube.com/watch?v=TleYPfeJnnU) and [pivot tables](http://youtu.be/_rZ6y-e7diw)
-* Handout(http:/../docs/xlpivot_updated.pdf)
+* [Handout](http:/../docs/xlpivot_updated.pdf), courtesy of IRE.
+
+## In class
+
+
+## Database concepts and viz: Tableau Public
+* [Training materials](http://www.tableau.com/public/ire) for IRE conferences. (Note: If you [join IRE](http://ire.org/membership/) for $70, you can request a copy of desktop Tableau for free - normally about $2,000 / year.)
+
 
 
 ### Going further
