@@ -1,13 +1,7 @@
-<html>
-<title>Hello Strapdown</title>
-
-<xmp theme="spacelab" style="display:none;">
-
 # More on scraping
 
 ## more tools
 * Outwit hub (now about $50, but powerful)
-* Kimono (a little creepy - they keep tabs of what you are doing and keep asking to help. I've also found it doesn't work a lot. I've had trouble with the simplest things.)
 * import.io - said to be the easiest out there, but I've had trouble using it. 
 
 By the time I get through trying to learn a tool, I might as well have learned to program it. Key parts of Python that will help with difficult sites:
@@ -119,8 +113,3 @@ Key XPath selectors are:
 
 	This says, for each of the 1st tds, look for div/font/input[1] -- he first input item (there are two). Then find the @click attribute, and take the 16 characters beginning at 23. To create the actual link, you can use concat("root html", your substring)
 
-
-</xmp>
-
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
-</html>

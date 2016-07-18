@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	  <title>Excel training</title>
+	  <link rel="stylesheet" href="stylesheets/styles.css">
+	  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+	  <scripts src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+   <div class="wrapper">
+   	<header>
+     <a href="index.html">Back to more classes</a>
+   	</header>
+   	<section>
+   <h1>2 hour Excel training</h1>
+   <h2>Handouts and reference</h2>
+		<ul>
+                <li><a href="/classes/docs/macxlcheatsheet.pdf">Cheat sheet</a> on keyboard shortcuts for Mac and Windows Excel.</li>
+
+                <li><a href="http://www.youtube.com/playlist?list=PL-Je9dqyEF8YS7Cy8BppKg5zrhiQC__n6">Video series</a> on best practices (for refresher later on)</li>
+
+                <li>Tidy data: <a href="/classes/docs/avoidxlproblems.pdf">Avoiding problems in Excel</a> and <a href="/classes/docs/bestpractices_v2.pdf">Best Practices in Excel</a> You're also welcome to look at my <a href="https://github.com/sarahcnyt/classes/blob/gh-pages/docs/lecturenotes-tidydata.md">lecture notes</a> from this class.</li>
+
+			         	<li>A series of <a href="docs/allxl.pdf">20-year-old handouts from IRE</a>, which look a little different than modern Excel, but not as much as you'd think</li>
+    </ul>
+  </section>
+  </div>
+  </body>
+</html>
