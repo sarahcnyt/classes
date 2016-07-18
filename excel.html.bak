@@ -20,12 +20,22 @@
 		<ul>
                 <li><a href="/classes/docs/macxlcheatsheet.pdf">Cheat sheet</a> on keyboard shortcuts for Mac and Windows Excel.</li>
 
-                <li><a href="http://www.youtube.com/playlist?list=PL-Je9dqyEF8YS7Cy8BppKg5zrhiQC__n6">Video series</a> on best practices (for refresher later on)</li>
+                <li><a href="http://www.youtube.com/playlist?list=PL-Je9dqyEF8YS7Cy8BppKg5zrhiQC__n6">Video series</a> on best practices (for refresher later on). Understanding <a href="https://github.com/sarahcnyt/data-journalism/blob/master/class1/data-types.xlsx">different types of data</a> is boring but important.</li>
 
                 <li>Tidy data: <a href="/classes/docs/avoidxlproblems.pdf">Avoiding problems in Excel</a> and <a href="/classes/docs/bestpractices_v2.pdf">Best Practices in Excel</a> You're also welcome to look at my <a href="https://github.com/sarahcnyt/classes/blob/gh-pages/docs/lecturenotes-tidydata.md">lecture notes</a> from this class.</li>
 
 			         	<li>A series of <a href="docs/allxl.pdf">20-year-old handouts from IRE</a>, which look a little different than modern Excel, but not as much as you'd think</li>
+			         	
+			        <li>Need to get data out of a pdf? <a href="https://github.com/sarahcnyt/data-journalism/blob/master/class4/pdf_tips.md">Two</a> <a href="https://github.com/sarahcnyt/data-journalism/blob/master/class4/pdf_wrangling.docx?raw=true">handouts</a> will give you a clue about what to do. </li>
+			         	
+			         	<li>Getting started with scraping: <a href="docs/scraping-chrome.pdf">a primer</a> on how to read a web page and organize the material into a spreadsheet. (Note: The Ontario legilsature changed how they listed the salaries in 2015, so that link won't work. Also, Craigslist no longer lists the latitude and longitude in the results. But the idea is the same.)</li>
     </ul>
+   <h2> Data used in class </h2>
+     <ul> 
+     	<li>Jack <a href="docs/Kevorkian.pdf">Kevorkian's</a> career in suicides</li>
+     	<li>Internal affairs <a href="docs/internal-affairs-report.pdf">report</a> from St. John's County, Fla, and the <a href="docs/bubba_harris_protocol.xlsx">actual spreadsheet</a> created for a story.</li>
+     	
+     	<li></li></ul>
   </section>
   </div>
   </body>
