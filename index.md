@@ -1,4 +1,5 @@
-# Sarahcnyt's site for teaching
+# Teaching site 
+(Fixes needed)
 
 ### Computer-assisted reporting classes
 * Spring 2014 CAR Class, Columbia's Stabile Program
