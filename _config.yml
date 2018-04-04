@@ -5,5 +5,9 @@ show_downloads: false
 #theme: jekyll-theme-tactile
 markdown: kramdown
 theme: minima
+navigation-pages:
+ 
+header-pages:
+ 
 gems:
   - jekyll-mentions
