@@ -2,7 +2,7 @@ title: Classes
 description: Master github-pages for teaching
 google_analytics: 
 show_downloads: false
-theme: jekyll-theme-tactile
+#theme: jekyll-theme-tactile
 markdown: kramdown
 theme: minima
 gems:
