@@ -4,10 +4,8 @@ google_analytics:
 show_downloads: false
 #theme: jekyll-theme-tactile
 markdown: kramdown
-theme: minima
-navigation-pages:
- 
-header-pages:
+theme: minimal
+
  
 gems:
   - jekyll-mentions
