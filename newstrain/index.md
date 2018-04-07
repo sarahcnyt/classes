@@ -8,7 +8,7 @@ title: "NewsTrain Phoenix"
 
 **[Slides](newstrain2018-2.pptx)**
 
-**[Finding records](https://docs.google.com/document/d/1VBAeUAwz90CiOd198t-diaryW6k6TgwoKQLnC887G_k/edit?usp=sharing)** on your beat tip cheet
+**[Finding records](https://docs.google.com/document/d/1VBAeUAwz90CiOd198t-diaryW6k6TgwoKQLnC887G_k/edit?usp=sharing)** on your beat tip sheet
 
 **[The NewsTrain tip sheet](../docs/doig-newstrain2017.pdf)**, Data-Driven Enterprise Off Your Beat.
 
