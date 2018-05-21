@@ -2,8 +2,9 @@
 (Fixes needed)
 
 ### Professional training 
-Columbia University [continuing education program](fundamentals), March 2015
-APME [Newstrain](newstrain) spreadsheet basics, April 2018
+* Columbia University [continuing education program](fundamentals), March 2015
+* APME [Newstrain](newstrain) spreadsheet basics, April 2018
+* NYT in-house [spreadsheet training](excel.html) (some links removed), 2017
 
 ### Investigative Skills
 Columbia University 2013-2015
