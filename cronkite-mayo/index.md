@@ -28,17 +28,21 @@ CMS's data sources are confusing. They could be found in [cms.gov](http://data.c
 
 **Standard provider level datasets**
 
-* Hospital (Part A) utilization by hospital
-* Provider (Part b) utilization by physician
-* openpayments: Drug company and device payments to providers
+* Medicare utilization [public use files](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/index.html) 
+* Medicare consumer-oriented datasets on quality and selected utilization at [https://data.medicare.gov/data](https://data.medicare.gov/data)
+* [openpayments](https://openpaymentsdata.cms.gov/): Drug company and device payments to providers
 * [Cost reports](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports/Cost-Reports-by-Fiscal-Year.html) for Medicare-eligible institutions, including hospitals, nursing homes, renal clinics, home health care, and hospice. These are the reports that show whether they are making and spending enough to provide care. It includes general financial information on all of the institutions' activity, not just Medicare patients.
 
 **Drug price and utilization**
 [CMS drug spending](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Information-on-Prescription-Drugs/index.html) has average prices paid in Medicare Part D, Part B and Medicaid. It also has the most recent year total spending.
 [data.medicaid.gov](http://data.medicaid.gov) has more details on drug utilization. 
 
-**Nursing home inspections**
+**Nursing homes**
 A lot of people use the CMS's Nursing Home Compare tool and data, but Propublica has made it much easier: Use its [Nursing Home Inspect](https://projects.propublica.org/nursing-homes/) tool, with downloadable data of unredacted inspection forms. It has documentation on sourcing and the meaning of the files.
+
+The "[full statement of deficiencies](https://downloads.cms.gov/files/Full-Statement-of-Deficiencies-April-2018.zip)" for April 2018. Look at the bottom of the 
+
+A [list of state contacts](https://www.medicare.gov/NursingHomeCompare/Resources/infoforresidents.html) for nursing home inspections and regulations.
 
 
 #### Strategy breadcrumbs
