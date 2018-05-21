@@ -5,6 +5,7 @@
 * Columbia University [continuing education program](fundamentals), March 2015
 * APME [Newstrain](newstrain) spreadsheet basics, April 2018
 * NYT in-house [spreadsheet training](excel.html) (some links removed), 2017
+* [Cronkite-Mayo Clinic](cronkite-mayo) health care fellowship, data reporting class, 2018
 
 ### Investigative Skills
 Columbia University 2013-2015
