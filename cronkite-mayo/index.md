@@ -7,7 +7,7 @@ May 2018
 
 ## Presentations
 * Powerpoint from class  - [Becoming a better watchdog](../docs/mayodata.pdf)
-* The AP's Meghan Hoyer's health care [Datapalooza](../docs/meghan%20hoyer%20-%20USC_Oct_2017_Datapalooza_of_health_data_ideas.pptx)  from the USC health care fellowship, 2017 (with permission). Her tip sheet on sources is made for California reporters, but it will give you a sense of what's available elsewhere.
+* The AP's Meghan Hoyer's health care [Datapalooza](../docs/meghan%20hoyer%20-%20USC_Oct_2017_Datapalooza_of_health_data_ideas.pptx)  from the USC health care fellowship, 2017 (with permission). Her [tip sheet](../docs/meghan%20hoyer%20-%20USC_March2018_Data_story_tipsheet.pdf) on sources is made for California reporters, but it will give you a sense of what's available elsewhere.
 
 ## Links
 
