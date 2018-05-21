@@ -38,11 +38,9 @@ CMS's data sources are confusing. They could be found in [cms.gov](http://data.c
 [data.medicaid.gov](http://data.medicaid.gov) has more details on drug utilization. 
 
 **Nursing homes**
-A lot of people use the CMS's Nursing Home Compare tool and data, but Propublica has made it much easier: Use its [Nursing Home Inspect](https://projects.propublica.org/nursing-homes/) tool, with downloadable data of unredacted inspection forms. It has documentation on sourcing and the meaning of the files.
-
-The "[full statement of deficiencies](https://downloads.cms.gov/files/Full-Statement-of-Deficiencies-April-2018.zip)" for April 2018. Look at the bottom of the 
-
-A [list of state contacts](https://www.medicare.gov/NursingHomeCompare/Resources/infoforresidents.html) for nursing home inspections and regulations.
+ * A lot of people use the CMS's Nursing Home Compare tool and data, but Propublica has made it much easier: Use its [Nursing Home Inspect](https://projects.propublica.org/nursing-homes/) tool, with downloadable data of unredacted inspection forms. It has documentation on sourcing and the meaning of the files.
+ * The "[full statement of deficiencies](https://downloads.cms.gov/files/Full-Statement-of-Deficiencies-April-2018.zip)" for April 2018. Look at the bottom of [https://www.cms.gov/medicare/provider-enrollment-and-certification/certificationandcomplianc/fsqrs.html](https://www.cms.gov/medicare/provider-enrollment-and-certification/certificationandcomplianc/fsqrs.html) to see a newer link. (The "download" directory isn't public, so you can't just tour it.)
+ * A [list of state contacts](https://www.medicare.gov/NursingHomeCompare/Resources/infoforresidents.html) for nursing home inspections and regulations.
 
 
 #### Strategy breadcrumbs
