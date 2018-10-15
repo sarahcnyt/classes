@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Tidy data # | Classes</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Tidy data #" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Master github-pages for teaching" />
+<meta property="og:description" content="Master github-pages for teaching" />
+<link rel="canonical" href="http://localhost:4000/docs/lecturenotes-tidydata.html" />
+<meta property="og:url" content="http://localhost:4000/docs/lecturenotes-tidydata.html" />
+<meta property="og:site_name" content="Classes" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/docs/lecturenotes-tidydata.html","description":"Master github-pages for teaching","headline":"Tidy data #","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=32d7768adcb54e7640192a0a4ddb029318967816">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">Classes</a></h1>
+
+        
+
+        <p>Master github-pages for teaching</p>
+
+        
+        <p class="view"><a href="http://github.com/sarahcnyt/classes">View the Project on GitHub <small>sarahcnyt/classes</small></a></p>
+        
+
+      </header>
+      <section>
+
+      <h1 id="tidy-data">Tidy data</h1>
+
+<p>Lecture notes, August 25, 2014<br />
+Stabile Investigative Reporting Program<br />
+Sarah Cohen / sarah.cohen@nytimes.com / 212.556.8027</p>
+
+<p>How to use excel in an investigations:</p>
+
+<ul>
+  <li>Make yourself. Track a case, or log events.</li>
+  <li>Do calculations and analysis on other peoples’ database.</li>
+  <li>Share your data</li>
+</ul>
+
+<p>Use the court salary database as an example of tidy data. The big problem is in the titles, and I took out some other problems.</p>
+
+<ol>
+  <li>Save as a copy (version, initials)</li>
+  <li>Add a unique id. (1, 2, doubleclick)</li>
+  <li>Freeze panes</li>
+</ol>
+
+<p>Why is it good to repeat, say, the jurisdiction? Repetitive?
+Last, First is a good way to do it.<br />
+Later will talk about other ways you might be tempted to do it.</p>
+
+<p>The term “Tidy data” comes from Hadley Wickham, a statistician who has been involved in developing products and add-ons for the R programming language. He uses Leo Tolstoy as a way to introduce untidy data: “Tidy datasets are alike, but every messy dataset is messy in its own way.”</p>
+
+<p>He’s defined some ways of thinking about data that let us use it in its most efficient form. You’ll find that if you follow this, your data set will often have many <em>rows</em>, but not few <em>columns</em>.  I call this a tall and skinny dataset, as opposed to a short and fat one.</p>
+
+<ul>
+  <li>Each row represents one item: a test, an inspection, a person, or an event.</li>
+  <li>Each column represents one attribute or variable about each item.</li>
+  <li>Each worksheet or table represents one type of observational unit. For example, an inspection might include many fines – one table would be information about the inspection, the other about the fines. This is what is called database “normalization”</li>
+</ul>
+
+<p>We often ignore this last element when working with smallish datasets, and just repeat any information we need.</p>
+
+<p>You will rarely get tidy data. I’ll give you some examples of real-world datasets we get all the time. But for now, we’ll go through the exercise of thinking about what you might want to record and how you might want to record information about the court case you are going to follow.</p>
+
+<p>This will be different depending on the larger theme. But having a good handle on the basic facts of your case are useful.</p>
+
+<p>Talk about how this works - what can and can’t you do with each of the columns? Why is it done this way?</p>
+
+<p>Types of data: Illustrated on <a href="data-types.xlsx">this spreadsheet</a> for examples</p>
+
+<ul>
+  <li>Words / text. These can be free-form, or they can be relatively consistent, like tags on a blog.</li>
+  <li>Numbers: Things you will add together or do math on.</li>
+  <li>Dates: A special kind of number you can look at in a lot of ways.</li>
+</ul>
+
+<p>Use the <a href="first100days.xlsx">first100days.xlsx</a> spreadsheet as an example of logging events.</p>
+
+<p>Still from Hadley, some common problems:</p>
+
+<ul>
+  <li>Column headings are values, not labels. Examples include years, income ranges, etc. These can be OK to work with, but they will become tedious, because each formula or each operation has to be done exactly the same on each column. If you have 10 years, you have to do 10 percent changes. Other tools might work better</li>
+  <li>Multiple kinds of information stored in one column. Example, one column for men 20-25 years old. Instead, have age column and sex column. (similar to above)</li>
+  <li>The same information in columns and rows</li>
+  <li>Different types of information (levels of analysis) in the same table.</li>
+  <li>Its companion – multiple tables for the same information. See the example of the Medicaid managed care.</li>
+</ul>
+
+<p>Hadley doesn’t mention the most common problem in the data we get and sometimes create – that the records are provided as a printout of a report, not as a dataset. Even when we get them in Excel. note the gambling records <a href="https://dl.dropboxusercontent.com/u/26514347/NYTTraining/gambling-arrests-orig.xlsx">here</a> and <a href="https://dl.dropboxusercontent.com/u/26514347/NYTTraining/arrests_normalized.xlsx">here</a>. Go through the original and explain what is wrong with it.</p>
+
+<p>The bad examples spreadsheet will take a long time to open, because of the way California did its ACA data.</p>
+
+<ul>
+  <li>California rates - how to make it small, what to do with it?</li>
+  <li>Sort the tarp? What happens to the formulas. Fill in the blanks.How would you tidy? Units of analysis.</li>
+  <li>Disaster declarations. Opposite problem. Filter vs. sort and summarize. Regex. Could they do any analysis themselves? Writing  a release, not analyzing geographic disparities. Investigative oppporutunities.</li>
+  <li>Vetpop - how to get data from pivot tables. (Forecasting, not going back in time).</li>
+</ul>
+
+<p>Exercise:</p>
+
+<ol>
+  <li>
+    <p>Read the section on Bubba Harris in [Two Gunshots on a Summer Night] (http://www.nytimes.com/projects/2013/two-gunshots/). Notice the chronology.</p>
+  </li>
+  <li>
+    <p>Now look at one of the key documents, <a href="https://www.dropbox.com/s/5clhgdmtfv3dt8z/internal-affairs-report.pdf?dl=0">the internal affairs report</a> obtained using Florida’s public records laws.  Don’t read the whole thing. Just enough to get a sense of where that started from.</p>
+  </li>
+  <li>
+    <p>One thing you wouldn’t know: We were most interested in whether or not this case followed what a trade association had said was best practice in suspected cases of domestic abuse among police officers.</p>
+  </li>
+  <li>
+    <p>Try to design a spreadsheet that would tell you what you need to know efficiently. There are lots of right ways to do this, but you’ll want to know what each gives you.</p>
+  </li>
+</ol>
+
+<p>Once done, look at the <a href="https://dl.dropboxusercontent.com/u/26514347/NYTTraining/bubba_harris_protocol.xlsx">actual spreadsheet</a> we made.</p>
+
+<p>Original videos are on <a href="https://www.youtube.com/playlist?list=PL-Je9dqyEF8YS7Cy8BppKg5zrhiQC__n6">Youtube</a>. The third one in this series is about how to to a spreadsheet on your own.</p>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="http://github.com/sarahcnyt">sarahcnyt</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>

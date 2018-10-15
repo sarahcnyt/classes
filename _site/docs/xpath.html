@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>More on scraping | Classes</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="More on scraping" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Master github-pages for teaching" />
+<meta property="og:description" content="Master github-pages for teaching" />
+<link rel="canonical" href="http://localhost:4000/docs/xpath.html" />
+<meta property="og:url" content="http://localhost:4000/docs/xpath.html" />
+<meta property="og:site_name" content="Classes" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/docs/xpath.html","description":"Master github-pages for teaching","headline":"More on scraping","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=32d7768adcb54e7640192a0a4ddb029318967816">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">Classes</a></h1>
+
+        
+
+        <p>Master github-pages for teaching</p>
+
+        
+        <p class="view"><a href="http://github.com/sarahcnyt/classes">View the Project on GitHub <small>sarahcnyt/classes</small></a></p>
+        
+
+      </header>
+      <section>
+
+      <h1 id="more-on-scraping">More on scraping</h1>
+
+<h2 id="more-tools">more tools</h2>
+<ul>
+  <li>Outwit hub (now about $50, but powerful)</li>
+  <li>import.io - said to be the easiest out there, but I’ve had trouble using it.</li>
+</ul>
+
+<p>By the time I get through trying to learn a tool, I might as well have learned to program it. Key parts of Python that will help with difficult sites:</p>
+
+<ul>
+  <li>Scrapy - a whole library of scraping tools that has its own manual and syntax. I think this one uses XPath though, so it will be easier to incorporate that in.</li>
+  <li>Selenium, for when you need to actually run a browser.</li>
+  <li>
+</ul>
+
+<p>Building on the tutorial that is at the http://sarahcnyt.github.io/ire-toronto site</p>
+
+<p>These examples came up recently and I needed to memorialize it for myself.  It’s just to help me remember.</p>
+
+<p>Start with Chrome inspection tool, right click on the element you want, then copy the XPath to give you a start.</p>
+
+<h2 id="finding-text-between-tags">Finding Text Between Tags</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;td nowrap=""&gt;
+	&lt;font face="arial" size="2"&gt;
+		&lt;b&gt;ABRAMSON, JOEL ELIOT &amp;nbsp; &amp;nbsp; &lt;br&gt; &lt;/b&gt;
+		JOEL E. ABRAMSON, P.C. &amp;nbsp; &amp;nbsp; &lt;br&gt; 
+		271 MADISON AVE FL 22 &amp;nbsp; &amp;nbsp; &lt;br&gt;
+		NEW YORK, NY 10016 &amp;nbsp; &amp;nbsp; &lt;br&gt;
+		(212)599-7700 &amp;nbsp; &amp;nbsp;
+	&lt;/font&gt;
+&lt;/td&gt;
+</code></pre></div></div>
+
+<p>If the whole chunk is the 2nd column, it’s [2]</p>
+
+<p>How can I get the name, which is outlined by the   &lt; b &gt;  (bold) tag? That text is the first text() element below the “font” tag, Any of these will work:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [2]/font/text()
+	or
+ [2]//text()
+	or
+ [2]/font/b/text()
+</code></pre></div></div>
+
+<p>A little less intuitively:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> *[2]font[1]/child::text()
+	or
+ *[2]/node()/node()
+	or
+ *[2]/font/node()[position=1]
+</code></pre></div></div>
+
+<p>The bold tag is the first child of the font tag. Technically, the “node” is everything between the font tags, then the second node is everything between the bold tags.</p>
+
+<p>Here’s how to get the city, state, zipcode from that chunk. (Use the last-1 because some firms had two-line addresses and others had only one. It would fail in cases where the city, state was the last row.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	*[2]/font/text()[position()=last()-1]
+			or
+	*[2]//text()[count(following-sibling::br)=1]
+</code></pre></div></div>
+
+<p>What if you had a slightly different piece of code, this one a line from the <a href="http://www.seminoles.com/SportSelect.dbml?SPID=157113&amp;SPSID=917030">Florida State football roster</a></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;tr class="odd"&gt;
+	&lt;td class="number"&gt;3&lt;/td&gt;
+	&lt;td class="name"&gt;
+		&lt;span class="sortname" style="display:none;"&gt;Darby Ronald&lt;/span&gt;
+		&lt;a title="Ronald Darby" href="/ViewArticle.dbml?ATCLID=209573037&amp;amp;DB_OEM_ID=32900"&gt;Ronald Darby&lt;/a&gt;
+	&lt;/td&gt;
+	&lt;td class="position"&gt;CB&lt;/td&gt;
+	&lt;td class="height" nowrap=""&gt;5-11&lt;/td&gt;
+	&lt;td class="weight"&gt;195&lt;/td&gt;
+	&lt;td class="year"&gt;
+		&lt;span style="display:none;"&gt;3&lt;/span&gt;
+		Jr.
+	&lt;/td&gt;
+	&lt;td class="hometown "&gt;Oxon Hill, Md. / Potomac&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre></div></div>
+
+<p>I’ll come back to this example later, so it’s worth having the whole snippet here. But all I care about right now is to pick up the “Jr” separate from the “3” in the class year.</p>
+
+<p>The first part is obvious, assuming we’re starting from the row.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  *[6]/span
+	 or
+  *[@class="year"]/span
+</code></pre></div></div>
+
+<p>How about getting just the word, without the number?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  *[6]/node()[position()=3]
+</code></pre></div></div>
+
+<p>or position()=last would work. It’s the 3rd node, not the second, because there is a span element in between. If it were text(), it would be the second.</p>
+
+<p>Recap:</p>
+
+<ul>
+  <li>To get everything as text, without the tags in between, just use the position or name.</li>
+  <li>To get the first text element, use <strong>text()</strong> or <strong>text()[position()=1]</strong>. It’s the same thing.</li>
+  <li>To get the last text element, use <strong>text()[position()=last]</strong>
+</li>
+  <li>To get a list of all of the elements, which has an entry for each tag and another for its text representation, use <strong>node()</strong> instead of <strong>text()</strong>. If for some reason you only want the list of tags without what they contain, use <strong>element()</strong>
+</li>
+</ul>
+
+<h2 id="finding-elements">Finding elements</h2>
+
+<p>Key XPath selectors are:</p>
+
+<ul>
+  <li>
+    <p><strong>descendant-or-self</strong>, which refers to everything below as well as yourself. It helps when you don’t know what level it might be. For example, in the html above, finding the “sortname” class wouldn’t depend on you knowing that it was two levels below.</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  descendant-or-self::node()[@class="sortname"]
+</code></pre></div>    </div>
+  </li>
+  <li>
+<strong>count(preceding-sibling::p)</strong> would count how many &lt; p &gt; tags came before. The opposite is <strong>following-sibling::tag</strong>. Leave off the the tag if you want just the number of elements, but they will be at the same level. You can use the count as a test, so that if you want the first two paragraphs, it can be:</li>
+  <li>
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>text()[count(preceding-sibling::p)&lt;3]
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>attributes of a tag, like onclick() action</strong> This was an interesting one, from the NYC ACRIS real estate document database. In this case, we were looking in an exercise for a company called Prevezon. There were about 30 records, just enough to make clicking into them a pain. If you get fewer than 100 records, you can scrape all using Chrome scraper. The key, though, is the link to the detail page. That is under the input button as an onclick event. Here is how I made the XPATH to get to that.</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  substring(*[1]/div/font/input[1]/@onclick, 23,16))
+</code></pre></div>    </div>
+
+    <p>This says, for each of the 1st tds, look for div/font/input[1] – he first input item (there are two). Then find the <a href="https://github.com/click" class="user-mention">@click</a> attribute, and take the 16 characters beginning at 23. To create the actual link, you can use concat(“root html”, your substring)</p>
+  </li>
+</ul>
+
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="http://github.com/sarahcnyt">sarahcnyt</a></p>
+        
+        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
