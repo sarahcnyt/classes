@@ -14,7 +14,7 @@ title: "Materials for Cronkite Masters' program bootcamp"
 ## Numbers in the newsroom
 
 * [Slides from class](https://slides.com/sarahcnyt/numbers-in-the-newsroom)
-* [Handout with common formulas for change, percents, etc.](/docs/danger.pdf)
+* [Handout with common formulas for change, percents, etc.](../docs/danger.pdf)
 
 ## Excel refresher
 
