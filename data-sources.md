@@ -15,4 +15,6 @@ title: "Links to source data for PhD students"
 
 * github.com(https://github.com) is where a lot of people stash their data, and by default it's public. A Google search usually doesn't search the datasets held inside Github's world - you normally need to search there. It's also useful to look for news organizations' github pages -- this is where they make data public that they've used in stories. (There are some other places, but this is the most common.)
 
-* Google's new [dataset search](https://toolbox.google.com/datasetsearch). It's a little easier to find standard datasets here, but it is just as hit or miss as the rest of Google. 
+* Google's new [dataset search](https://toolbox.google.com/datasetsearch) makes it a little easier to find standard datasets, but it is just as hit or miss as the rest of Google.
+
+* [Roper Center for Public Opinion Research](https://ropercenter.cornell.edu/polls/) is an archive of reputable polling results. Most organizations contribute them to Roper after some time has passed, but it's a useful place to see what questions on your topic have been asked before, and by whom. One way to use it is to do a new survey based on the same questions if you need a comparison. Search poll questions using the  [ipoll search](https://ropercenter.cornell.edu/CFIDE/cf/action/ipoll/index.cfm). Their datasets are mainly historical or esoteric.
