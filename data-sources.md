@@ -13,7 +13,7 @@ title: "Links to source data for doctoral students"
 
 * [enigma.com](https://public.enigma.com) wants to be the Google for public records, and it has aggressively sought out some datasets from government agencies. (Example: The minority report on Facebook ads allows you to look at the data submitted to Congress during the investigation) One of its great strengths is that it takes care to give you the lineage of all datasets.
 
-* data.world (https://data.world) wants to be the Facebook of data, where people can share their data and insights. It's all over the place -- no one makes any effort to curate it, or to enforce credibility standards. But if you find something there, you can usually follow it back to the original source.
+* [data.world](https://data.world) wants to be the Facebook of data, where people can share their data and insights. It's all over the place -- no one makes any effort to curate it, or to enforce credibility standards. But if you find something there, you can usually follow it back to the original source.
 
 * github.com(https://github.com) is where a lot of people stash their data, and by default it's public. A Google search usually doesn't search the datasets held inside Github's world - you normally need to search there. It's also useful to look for news organizations' github pages -- this is where they make data public that they've used in stories. (There are some other places, but this is the most common.)
 
