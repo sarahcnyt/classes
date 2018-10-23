@@ -1,6 +1,8 @@
 ---
-title: "Links to source data for PhD students"
+title: "Links to source data for doctoral students"
 ---
+
+## Outside data sources for doctoral students
 
 
 * [Social Explorer](https://socialexplorer.com) is a much easier way to get at Census and related data than going through the Census bureau. It's a subscription service that is available any time you're connected through the school's IP.  It includes block group level 5-year ACS files, decennial census and some historical data other sources.
