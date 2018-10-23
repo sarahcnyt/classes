@@ -18,4 +18,4 @@ Columbia University 2013-2015
 * Cronkite School of Journalism's [data reporting website](https://sarahcnyt.github.io/data-reporting/), Spring 2018
 
 ### Data sources
-* Marianne Barret's PhD class links
+* [Data sources for doctoral students](data-sources)
