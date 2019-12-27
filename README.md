@@ -1,3 +1,4 @@
 # classes
-This is my master site for teaching. It gets a little disorganized over time, but for now it'll work. 
-Go to [github pages](http://sarahcnyt.github.io/classes/) to see more. 
+
+Most of this has been moved to the [cronkitedata.github.io/cronkite-docs](https://cronkitedata.github.io/cronkite-docs) repo. This one is full of broken links and old content, but I'm afraid to delete it. 
+ 
